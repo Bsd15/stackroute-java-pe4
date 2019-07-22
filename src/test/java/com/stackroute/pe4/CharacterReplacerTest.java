@@ -67,10 +67,21 @@ public class CharacterReplacerTest {
      * Given a string with d and i characters, the method should return valid output.
      */
     @Test
-    public void givenStringWitShouldReturnStringWithReplacedDAndICharacters() {
+    public void givenStringShouldReturnStringWithReplacedDAndICharacters() {
         String expectedMessage = "fatly fry";
         assertEquals("givenStringWithoutDAndIShouldReturnSameString: check replaceCharacters()",
                 expectedMessage, characterReplacer.replaceCharacters("daily dry"));
+    }
+
+    /**
+     * Test - replaceCharacters()
+     * Given a string with capital and small d and i, the method should return valid output.
+     */
+    @Test
+    public void givenStringWithCapitalsShouldReturnStringWithReplacedDAndICharacters() {
+        String expectedMessage = "faTly fry";
+        assertEquals("givenStringWithCapitalsShouldReturnStringWithReplacedDAndICharacters: check replaceCharacters()",
+                expectedMessage, characterReplacer.replaceCharacters("daIly dry"));
     }
 
 }
