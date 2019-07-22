@@ -1,7 +1,6 @@
 package com.stackroute.pe4;
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -15,7 +14,7 @@ import java.util.List;
 public class ParagraphWordsSorter {
     /**
      * Method takes in a string or a paragraph and splits the string into an array
-     * and sorts them alphabetically and returns it.
+     * and sorts them alphabetically (case insensitive) and returns it.
      * @param paragraphToSort String, of which words are to be sorted and returned.
      * @return String array sorted alphabetically
      */
