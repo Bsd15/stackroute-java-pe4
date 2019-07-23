@@ -20,7 +20,7 @@ public class ParagraphWordsSorter {
      */
     public String[] sortWordsInParagraph(String paragraphToSort) {
         if (paragraphToSort.isEmpty() || paragraphToSort.isBlank()) {
-            throw new NullPointerException();
+            throw new NullPointerException("Empty or Blank string given");
         }
         List<String> wordsList = Arrays.asList(paragraphToSort.split(" "));
         Collections.sort(wordsList, String.CASE_INSENSITIVE_ORDER);

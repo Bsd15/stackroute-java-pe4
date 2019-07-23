@@ -16,7 +16,7 @@ public class OccurrenceCounter {
      */
     public long countOccurrences(String characterToCountAsString, String stringToCount) {
         if (characterToCountAsString.isEmpty() || stringToCount.isEmpty() || characterToCountAsString.isBlank() || stringToCount.isBlank() || characterToCountAsString.equals(null) || stringToCount.equals(null)) {
-            throw new NullPointerException();
+            throw new NullPointerException("Empty or Blank string given");
         }
         Character characterToCount = characterToCountAsString.toCharArray()[0];
         return stringToCount.chars().filter(characterInString -> characterInString == characterToCount)

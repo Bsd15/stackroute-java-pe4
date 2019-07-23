@@ -15,7 +15,7 @@ public class OccurrenceMatcher {
 
     public String[] getOccurrencePositions(String stringToMatch, String patternToSearch) {
         if (stringToMatch.isEmpty() || stringToMatch.isBlank() || patternToSearch.isEmpty() || patternToSearch.isBlank()) {
-            throw new RuntimeException();
+            throw new RuntimeException("Empty or Blank string given");
         }
         Pattern pattern = Pattern.compile(patternToSearch);
         Matcher matcher = pattern.matcher(stringToMatch);

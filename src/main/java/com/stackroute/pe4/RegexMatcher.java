@@ -16,7 +16,7 @@ public class RegexMatcher {
      */
     public boolean findPattern(String stringToMatch) {
         if (stringToMatch.isBlank() || stringToMatch.isEmpty()) {
-            throw new RuntimeException();
+            throw new RuntimeException("Empty or Blank string given");
         }
         Pattern pattern = Pattern.compile("(\\s?)(?i)harry\\1");
         Matcher matcher = pattern.matcher(stringToMatch);
